@@ -94,6 +94,7 @@ main {
   font-size: 42px;
 }
 
+<<<<<<< HEAD
 .section {
   max-width: 95%;
   margin: 0 auto;
@@ -102,6 +103,11 @@ main {
 .news__text {
   margin: 70px 0px 30px 0px;
   font-size: 2.2rem;
+=======
+.section__text {
+  margin-top: 50px;
+  grid-column: 1 / -1;
+>>>>>>> 7bfa4a54734949e4690adbfb2f25ed2754889913
 }
 
 .section__title {
@@ -109,6 +115,7 @@ main {
   font-size: 2.5rem;
 }
 
+<<<<<<< HEAD
 .cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -152,4 +159,7 @@ main {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
+=======
+.section__paragraph {
+>>>>>>> 7bfa4a54734949e4690adbfb2f25ed2754889913
 }
