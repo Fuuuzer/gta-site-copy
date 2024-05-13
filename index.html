@@ -11,23 +11,26 @@
 
 <body>
 
-  <header class="header">
-    <h1>logo</h1>
-    <div class="header__list">
-      <ul>
-        <li>Games</li>
-        <li>Newswire</li>
-        <li>Videos</li>
-        <li>Downloads</li>
-        <li>Store</li>
-        <li>Support</li>
-      </ul>
-    </div>
 
-    <div>
-      <button>Get launcher</button>
-      <i class="fa-solid fa-magnifying-glass"></i>
+  <header class="header__container">
+    <div class="header">
+      <h1>logo</h1>
+      <div class="header__list">
+        <ul>
+          <li>Games</li>
+          <li>Newswire</li>
+          <li>Videos</li>
+          <li>Downloads</li>
+          <li>Store</li>
+          <li>Support</li>
+        </ul>
+      </div>
 
+      <div class="header__launcher">
+        <button class="header__btn">Get launcher</button>
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <i class="fa-regular fa-user"></i>
+      </div>
     </div>
   </header>
 
@@ -40,10 +43,18 @@
     </div>
 
     <div class="informations">
-      <p class="informations__game">Grand Theft Auto VI</p>
-      <h1 class="informations__title">Trailer 1</h1>
-      <div class="main">
-        <button class="main__btn">Watch now</button>
+      <div>
+        <p class="informations__game">Grand Theft Auto VI</p>
+        <h1 class="informations__title">Trailer 1</h1>
+        <div class="main">
+          <button class="main__btn">Watch now</button>
+        </div>
+      </div>
+      <div class="carrossel">
+        <button></button>
+        <button></button>
+        <button></button>
+        <button></button>
       </div>
     </div>
   </main>
@@ -55,7 +66,9 @@
       <div class="card">
         <img src="/assets/img/motor-wars.jpg" alt="">
         <div class="card__information">
-          <p>Gta Online</p> <span>March 21, 2024</span>
+          <div>
+            <p>Gta Online</p> <span>March 21, 2024</span>
+          </div>
           <p class="text">Embrace the Mayhem of Motor Wars and Get 2X GTA$ and RP</h3>
         </div>
       </div>
@@ -63,7 +76,9 @@
       <div class="card">
         <img src="/assets/img/cluckin-bell.jpg" alt="">
         <div class="card__information">
-          <p>Gta Online</p> <span>March 21, 2024</span>
+          <div>
+            <p>Gta Online</p> <span>March 21, 2024</span>
+          </div>
           <p class="text">Embrace the Mayhem of Motor Wars and Get 2X GTA$ and RP</h3>
         </div>
       </div>
@@ -71,14 +86,16 @@
       <div class="card">
         <img src="/assets/img/gta-plus.jpg" alt="">
         <div class="card__information">
-          <p>Gta Online</p> <span>March 21, 2024</span>
+          <div>
+            <p>Gta Online</p> <span>March 21, 2024</span>
+          </div>
           <p class="text">Embrace the Mayhem of Motor Wars and Get 2X GTA$ and RP</h3>
         </div>
       </div>
     </div>
   </section>
 
-
+  <script src="script.js"></script>
 </body>
 
 </html>

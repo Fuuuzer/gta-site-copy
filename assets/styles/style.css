@@ -17,20 +17,58 @@ img {
   max-width: 100%;
 }
 
-.header {
+i {
+ cursor: pointer; 
+}
+
+.header__container {
   position: sticky;
   top: 0;
+  background-color: #000000e3;
+  border-bottom: 1px solid #b3b3b331;
+}
+
+.header {
+  margin: 0 auto;
+  max-width: 80vw;
   display: flex;
   align-items: center;
-  justify-content: center;
-  background: linear-gradient(
-    90deg,
-    rgba(100, 116, 157, 1) 0%,
-    rgba(125, 100, 148, 1) 30%,
-    rgba(223, 151, 134, 1) 100%
-  );
+  justify-content: space-between;
   width: 100%;
-  height: 60px;
+}
+
+.header__list > ul {
+  display: flex;
+  list-style: none;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.header__list ul li {
+  /* background-color: red; */
+  padding: 30px 25px;
+  border: 2px solid transparent;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.header__list ul li:hover {
+  border-bottom: 2px solid #fff;
+}
+
+.header__btn {
+  text-transform: uppercase;
+  background: #fcaf17;
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 5px;
+  color: #000;
+}
+
+.header__launcher {
+  display: flex;
+  align-items: center;
+  gap: 30px;
 }
 
 main {
@@ -65,29 +103,51 @@ main {
 }
 
 .video__foto {
-  
   cursor: pointer;
 }
 
 .informations {
+  /* background-color: red; */
+  margin: 50px 40px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   max-width: 100%;
 }
 
-.informations__game {
-  margin-top: 80px;
+.informations__game{
+  margin-top: 30px;
   font-size: 16px;
   font-weight: bold;
 }
 
 .informations__title {
   margin-top: 20px;
-  font-size: 42px;
+  font-size: 3rem;
+}
+
+.carrossel {
+  /* background: blue; */
+  margin-bottom: 50px;
+  display: flex;
+  gap: 15px;
+}
+
+.carrossel > button {
+  border: none;
+  width: 80px;
+  height:4px;
+  border-radius: 2px;
+  background: #b3b3b3;
+  cursor: pointer;
+}
+
+.carrossel > .active__btn {
+  background: #fff;
 }
 
 .section {
-  max-width: 95%;
+  max-width: 80vw;
   margin: 0 auto;
 }
 
@@ -102,8 +162,8 @@ main {
 }
 
 .cards {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  margin: 0 auto;
   gap: 30px;
 }
 
@@ -112,6 +172,7 @@ main {
   grid-template-columns: 1fr;
   border: 1px solid #242424ab;
   border-radius: 8px 8px 0px 0px;
+  cursor: pointer;
 }
 
 .card img {
@@ -119,10 +180,15 @@ main {
 }
 
 .card__information {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  gap: 40px;
-  padding: 40px 30px;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+}
+
+.card__information div {
+  margin-bottom: 15px;
+  display: flex;
+  gap: 10px;
 }
 
 .card__information p, span {
