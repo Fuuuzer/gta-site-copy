@@ -9,6 +9,14 @@ buttons.forEach(btn => {
     switch (btn) {
       case buttons[0]:
         slider.style.setProperty('--selected-item', '0');
+        texts.innerHTML = 
+        `
+        <p class="informations__game">Grand Theft Auto VI</p>
+        <h1 class="informations__title">Trailer 1</h1>
+        <div class="main">
+          <button class="main__btn">Watch now</button>
+        </div>
+        `
         break;
       case buttons[1]:
         slider.style.setProperty('--selected-item', '1');
