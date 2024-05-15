@@ -35,21 +35,22 @@ i {
   margin: 0 auto;
   max-width: 80vw;
   display: flex;
+  /* gap: 10px; */
   align-items: center;
   justify-content: space-between;
-  width: 100%;
 }
 
 .header__list > ul {
   display: flex;
   list-style: none;
-  font-size: 14px;
-  font-weight: 600;
+  font-size: 16px;
+  font-weight: bolder;
+  /* max-width: 30%; */
 }
 
 .header__list ul li {
   /* background-color: red; */
-  padding: 30px 25px;
+  padding: 30px 20px;
   border: 2px solid transparent;
   transition: 0.3s ease-in-out;
   cursor: pointer;
@@ -63,9 +64,17 @@ i {
   text-transform: uppercase;
   background: #fcaf17;
   font-weight: bold;
+  font-size: 16px;
   padding: 10px 15px;
   border-radius: 5px;
   color: #000;
+  border: none;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.header__btn:hover {
+  background: #d49414;
 }
 
 .header__launcher {
