@@ -10,7 +10,6 @@
 body {
   color: #fff;
   background: #000000;
-  overflow: hidden;
   height: 100vh;
 }
 
@@ -20,7 +19,7 @@ img {
 }
 
 i {
- cursor: pointer; 
+  cursor: pointer;
 }
 
 .header__container {
@@ -87,7 +86,6 @@ main {
   min-height: 30vh;
 }
 
-
 .main > button {
   display: block;
   margin-top: 30px;
@@ -109,7 +107,6 @@ main {
   height: 80vh;
   position: relative;
 }
-
 
 .main__btn:hover {
   background: #fcaf17;
@@ -166,7 +163,7 @@ main {
   justify-content: space-between;
 }
 
-.informations__game{
+.informations__game {
   margin-top: 30px;
   font-size: 16px;
   font-weight: bold;
@@ -186,7 +183,7 @@ main {
 .carrossel > button {
   border: none;
   width: 80px;
-  height:4px;
+  height: 4px;
   border-radius: 2px;
   background: #b3b3b3;
   cursor: pointer;
@@ -241,7 +238,8 @@ main {
   gap: 10px;
 }
 
-.card__information p, span {
+.card__information p,
+span {
   font-weight: bold;
   font-size: 18px;
 }
@@ -255,7 +253,7 @@ main {
   grid-column: 1 / -1;
 }
 
-@media (max-width:1000px) {
+@media (max-width: 1000px) {
   .cards {
     display: grid;
     grid-template-columns: 1fr 1fr;
